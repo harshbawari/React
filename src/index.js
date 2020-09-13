@@ -6,10 +6,13 @@ import 'bootstrap-social/bootstrap-social.css';
 import './index.css';
 import Main from './components/MainComponent';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <BrowserRouter>
+      <Main />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
